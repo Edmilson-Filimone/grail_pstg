@@ -1,0 +1,6 @@
+#Thu, 28 Jul 2022 20:04:15 +0200
+
+info.app.version=0.1
+info.app.name=labstore
+grails.env=development
+info.app.grailsVersion=5.1.8

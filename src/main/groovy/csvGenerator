@@ -1,0 +1,12 @@
+import labstore.*
+
+def m = Material.list()
+def lista = new ArrayList()
+lista.add(Arrays.asList("Material", "Quantidade"))
+
+m.each{
+       lista.add(Arrays.asList(it.name, it.quantity.toString()))
+    }
+
+def file = new File('mycsv.csv')
+file.text = lista*.join(',').join(System.lineSeparator())
