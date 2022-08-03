@@ -107,15 +107,15 @@ dataSource:
     pooled: true
     jmxExport: true
     driverClassName: org.postgresql.Driver
-    username: weehxlmevolmff
-    password: 32b9488d58e750d0b50d354ae110d987e0a6e4cf7cb07ee5d5b40355b90a8f6e
+    username: ****
+    password: ****
     # dialect: org.hibernate.dialect.MySQL8InnoDBDialect
 
 environments: 
     development:
         dataSource:
             dbCreate: update
-            url:  jdbc:postgresql://ec2-52-203-118-49.compute-1.amazonaws.com:5432/dchfbq8ofdn4mb
+            url:  *****
     test:
         dataSource:
             dbCreate: update
