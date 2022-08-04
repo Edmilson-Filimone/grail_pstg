@@ -1,28 +1,35 @@
 /* FONT STACK */
 body,
-input, select, textarea {
+input,
+select,
+textarea {
     font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.1;
 }
 
 /* BASE LAYOUT */
 
 html {
-    background-color:#C9D0DA;
+    background-color: #C9D0DA;
     background-image: -moz-linear-gradient(center top, #aaa, #ddd);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
     background-image: linear-gradient(to bottom, #aaa, #ddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#aaaaaa', EndColorStr='#dddddd');
     background-repeat: no-repeat;
     height: 100%;
     /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    min-width: 498px !important;
+    min-width: 320px !important;
 }
 
 html.no-cssgradients {
@@ -34,9 +41,11 @@ html * {
 }
 
 body {
-    background-color:  #C9D0DA;;
+    background-color: #C9D0DA;
+    ;
     color: #333333;
-    overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
+    overflow-x: hidden;
+    /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
     -moz-box-shadow: 0 0 0.3em #424649;
     -webkit-box-shadow: 0 0 0.3em #424649;
     box-shadow: 0 0 0.3em #424649;
@@ -46,11 +55,15 @@ body {
     background-color: #feb672;
 }
 
-a:hover, a:active {
-    outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
+a:hover,
+a:active {
+    outline: none;
+    /* prevents outline in webkit on active links but retains it for tab focus */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: normal;
     font-size: 1.25em;
     margin: 0.8em 0 0.3em 0;
@@ -72,7 +85,8 @@ img {
 }
 
 #content {
-    background-color: #C9D0DA;;   
+    background-color: #C9D0DA;
+    ;
 }
 
 .content h1 {
@@ -159,27 +173,33 @@ img {
     border-radius: 0;
 }
 
-.nav a:active, .nav a:visited {
+.nav a:active,
+.nav a:visited {
     color: #666666;
 }
 
-.nav a:focus, .nav a:hover {
+.nav a:focus,
+.nav a:hover {
     background-color: #999999;
     color: #ffffff;
     outline: none;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-.no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
+.no-borderradius .nav a:focus,
+.no-borderradius .nav a:hover {
     background-color: transparent;
     color: #444444;
     text-decoration: underline;
 }
 
-.nav a.home, .nav a.list, .nav a.create {
+.nav a.home,
+.nav a.list,
+.nav a.create {
     background-position: 0.7em center;
     background-repeat: no-repeat;
     text-indent: 25px;
+    font-size: 14px;
 }
 
 .nav a.home {
@@ -200,7 +220,10 @@ img {
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
 
-#create-material, #create-entry, #create-outs, #create-store{
+#create-material,
+#create-entry,
+#create-outs,
+#create-store {
     text-align: center;
     max-width: fit-content;
     margin: 0 auto;
@@ -224,10 +247,11 @@ fieldset,
 
 .fieldcontain {
     margin-top: 1em;
-    background-color: #C9D0DA;;
+    background-color: #C9D0DA;
+    ;
 }
 
-.fieldcontain.required{
+.fieldcontain.required {
     width: 400px;
     color: #000000;
     /*border: 1px solid black;*/
@@ -237,34 +261,32 @@ fieldset,
 
 .fieldcontain label,
 .fieldcontain .property-label {
-    background-color: #C9D0DA;;
+    background-color: #C9D0DA;
+    ;
     color: #000000;
     /*text-align: right;*/
-    width:90px;
+    width: 90px;
     text-align: left;
-
 }
 
-.fieldcontain .property-label {
-   /* float: left;*/
-   
-    
-}
+/*.fieldcontain .property-label {float: left;}*/
 
 .fieldcontain .property-value {
     display: block;
     margin-left: 27%;
-    
 }
 
 label {
     cursor: pointer;
     display: inline-block;
     font-weight: 800;
-    
+
 }
 
-input, select, textarea, #date {
+input,
+select,
+textarea,
+#date {
     background-color: rgb(255, 255, 255);
     border: 1px solid #4f4f4f;
     font-size: 1.1em;
@@ -284,18 +306,22 @@ select[multiple] {
 textarea {
     width: 250px;
     height: 150px;
-    overflow: auto; /* IE always renders vertical scrollbar without this */
+    overflow: auto;
+    /* IE always renders vertical scrollbar without this */
     vertical-align: top;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
     background-color: transparent;
     border: 0;
     padding: 0;
 }
 
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     background-color: #ffffff;
     border: 1px solid #00000095;
     outline: 0;
@@ -386,13 +412,17 @@ fieldset.embedded legend {
 
 /* form fields with errors */
 
-.error input, .error select, .error textarea {
+.error input,
+.error select,
+.error textarea {
     background: #fff3f3;
     border-color: #ffaaaa;
     color: #cc0000;
 }
 
-.error input:focus, .error select:focus, .error textarea:focus {
+.error input:focus,
+.error select:focus,
+.error textarea:focus {
     -moz-box-shadow: 0 0 0.5em #ffaaaa;
     -webkit-box-shadow: 0 0 0.5em #ffaaaa;
     box-shadow: 0 0 0.5em #ffaaaa;
@@ -400,15 +430,13 @@ fieldset.embedded legend {
 
 /* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
 
-input:invalid, select:invalid, textarea:invalid {
-    /*background: #fff3f3;
-    border-color: #ffaaaa;
-    color: #cc0000;*/
-}
+/*input:invalid, select:invalid, textarea:invalid {}*/
 
-input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
+input:invalid:focus,
+select:invalid:focus,
+textarea:invalid:focus {
     -moz-box-shadow: 0 0 0.5em #73daff;
-    border:1px solid rgba(0, 0, 0, 0.534);
+    border: 1px solid rgba(0, 0, 0, 0.534);
     -webkit-box-shadow: 0 0 0.5em #73daff;
     box-shadow: 0 0 0.5em #73daff;
 }
@@ -426,15 +454,18 @@ tr {
     border: 0;
 }
 
-tr>td:first-child, tr>th:first-child {
+tr>td:first-child,
+tr>th:first-child {
     padding-left: 1.25em;
 }
 
-tr>td:last-child, tr>th:last-child {
+tr>td:last-child,
+tr>th:last-child {
     padding-right: 1.25em;
 }
 
-td, th {
+td,
+th {
     line-height: 1.5em;
     padding: 0.5em 0.6em;
     text-align: left;
@@ -445,7 +476,7 @@ th {
     background-color: #333333;
     background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
     color: #666666;
     font-weight: bold;
@@ -455,7 +486,7 @@ th {
 
 thead th {
     white-space: nowrap;
-    
+
 }
 
 th a {
@@ -463,11 +494,13 @@ th a {
     text-decoration: none;
 }
 
-th a:link, th a:visited {
+th a:link,
+th a:visited {
     color: #666666;
 }
 
-th a:hover, th a:focus {
+th a:hover,
+th a:focus {
     color: #333333;
 }
 
@@ -493,7 +526,8 @@ th.desc a {
     background: #ffffff;
 }
 
-th:hover, tr:hover {
+th:hover,
+tr:hover {
     background: #f5f5f5;
 }
 
@@ -522,7 +556,8 @@ th:hover, tr:hover {
     border-radius: 0.3em;
 }
 
-.pagination a:hover, .pagination a:focus,
+.pagination a:hover,
+.pagination a:focus,
 .pagination .currentStep {
     background-color: #999999;
     color: #ffffff;
@@ -530,7 +565,8 @@ th:hover, tr:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-.no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
+.no-borderradius .pagination a:hover,
+.no-borderradius .pagination a:focus,
 .no-borderradius .pagination .currentStep {
     background-color: transparent;
     color: #444444;
@@ -568,8 +604,10 @@ th:hover, tr:hover {
     border-radius: 0.3em;
 }
 
-.buttons input:hover, .buttons input:focus,
-.buttons a:hover, .buttons a:focus {
+.buttons input:hover,
+.buttons input:focus,
+.buttons a:hover,
+.buttons a:focus {
     background-color: #999999;
     color: #ffffff;
     outline: none;
@@ -579,14 +617,18 @@ th:hover, tr:hover {
     box-shadow: none;
 }
 
-.no-borderradius .buttons input:hover, .no-borderradius .buttons input:focus,
-.no-borderradius .buttons a:hover, .no-borderradius .buttons a:focus {
+.no-borderradius .buttons input:hover,
+.no-borderradius .buttons input:focus,
+.no-borderradius .buttons a:hover,
+.no-borderradius .buttons a:focus {
     background-color: transparent;
     color: #444444;
     text-decoration: underline;
 }
 
-.buttons .delete, .buttons .edit, .buttons .save {
+.buttons .delete,
+.buttons .edit,
+.buttons .save {
     background-position: 0.7em center;
     background-repeat: no-repeat;
     text-indent: 25px;
@@ -613,35 +655,35 @@ a.skip {
     background: #7c7c7c no-repeat 50% 30%;
     margin-bottom: 20px;
     color: white;
-    height:300px;
-    text-align:center;
+    height: 300px;
+    text-align: center;
 }
 
 img.grails-logo {
-    height:340px;
-    margin-top:-10px;
+    height: 340px;
+    margin-top: -10px;
 }
 
 /*MINHAS CONFIGURACOES*/
-.button{
-    width:100px;
+.button {
+    width: 100px;
     height: 40px;
     padding: 10px;
-    margin:2% 15%;
+    margin: 2% 15%;
 }
 
-.myH1{
-    color:#202020;
+.myH1 {
+    color: #202020;
     font-weight: 700;
     font-size: 24px;
-    margin:2.5% 3.5%;
-    
+    margin: 2.5% 3.5%;
+
 }
 
-.myH2{
-    width:100%;
+.myH2 {
+    width: 100%;
     padding: 15px;
-    color:#202020;
+    color: #202020;
     font-weight: 700;
     font-size: 24px;
     border: 0.5px solid rgba(41, 41, 41, 0.652);
@@ -649,10 +691,10 @@ img.grails-logo {
     text-align: center;
 }
 
-.myIcon{
-    width:fit-content;
+.myIcon {
+    width: fit-content;
     padding: 15px;
-    color:#202020;
+    color: #202020;
     font-weight: 700;
     font-size: 16px;
     border: 0.5px solid rgba(41, 41, 41, 0.652);
@@ -660,17 +702,17 @@ img.grails-logo {
     border-radius: 9px;
 }
 
-.icon-button{
+.icon-button {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     margin-left: 2px;
 }
 
-#date{
-    margin-top:13px;
+#date {
+    margin-top: 13px;
 }
 
-label[for=date]{
+label[for=date] {
     width: 90px;
     color: #000000;
     text-align: left;
@@ -678,323 +720,373 @@ label[for=date]{
 
 /*show*/
 
-.show-me{
+.show-me {
     font-size: 16px;
-    padding:8px 0;
+    padding: 8px 0;
 }
 
 
-.show-me ul{
+.show-me ul {
     list-style-type: square;
     list-style-position: inside;
 }
 
-.show-me ul li{
+.show-me ul li {
     padding: 5px 0;
 }
 
-.rotulo{
+.rotulo {
     font-weight: bold;
     margin-right: 5px;
 }
 
-.edit-delete{
+.edit-delete {
     display: flex;
 }
 
-.editar, .deletar{
+.editar,
+.deletar {
     width: 100px;
     height: 40px;
-    margin-right:10px;
+    margin-right: 10px;
     margin-top: 20px;
 }
 
-.edit{
+.edit {
     text-decoration: none;
     color: black
 }
 
-table{
+table {
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.515), 1px -2px 1px rgba(0, 0, 0, 0.51);
     overflow-x: auto;
 }
 
-tbody tr td{
+tbody tr td {
     font-size: 16px !important;
 }
 
-tr th{
+tr th {
     font-weight: 800;
     color: #000;
 }
 
-td a{
-    text-decoration:underline;
+td a {
+    text-decoration: underline;
     color: white;
 }
 
-tr:hover{
+tr:hover {
     background-color: #66a8fff7;
 }
 
 /*dashboard*/
 
-.sidebar{
+.sidebar {
     background-color: #163E60;
-    width:20%;
-    min-height:100%;
+    width: 20%;
+    min-height: 100%;
 }
 
-.main{
+.main {
     background-color: #E7EBEE;
     width: 80%;
 }
 
 
-.body{
+.body {
     display: flex;
     background-color: #C9D0DA;
     padding: 2.5%;
-    
+
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     margin: 20px;
     text-align: center;
 }
 
-.box{
+.box {
     width: 240px;
     height: 160px;
     margin-right: 20px;
-    border: 0.6px solid  #FFFFFF;
-    background-color:#FFFFFF;
+    border: 0.6px solid #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.496);
 }
 
-.box:nth-child(1){
-    border-color:#163E60;
+.box:nth-child(1) {
+    border-color: #163E60;
     background-color: #163E60;
     color: #FFFFFF;
 }
 
-.box{
-    padding:10px 25px;
+.box {
+    padding: 10px 25px;
 }
 
-.box li{
+.box li {
     list-style: none;
     margin-bottom: 8px;
 }
 
-.flex{
-    display:flex;
+.flex {
+    display: flex;
     justify-content: space-between;
-    
+
 }
 
-.label{
-    padding-top:14px;
+.label {
+    padding-top: 14px;
     font-size: 22px;
-    
+
 }
 
-.icon{
+.icon {
     border-radius: 30px;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     color: #163E60;
-    padding:8px;
+    padding: 8px;
     font-size: 36px;
 }
 
-#one .icon, #two .icon, #three .icon{
-    color:#FDAA25;
+#one .icon,
+#two .icon,
+#three .icon {
+    color: #FDAA25;
     font-size: 36px;
-    border-radius:25px;
-    padding:10px;
+    border-radius: 25px;
+    padding: 10px;
 }
 
-.value{
+.value {
     font-size: 42px;
-    text-align:left;
+    text-align: left;
     color: #0d3960;
 }
 
-.box:nth-child(1) .value{
+.box:nth-child(1) .value {
     color: #FFFFFF;
 }
 
-.image{
+.image {
     text-align: center;
     border: 1px solid #C9D0DA;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
     width: 90%;
     height: 60%;
-    margin:auto;
+    margin: auto;
     background-color: #0d3960;
 }
-.image img{
-    max-width:280px;
-    max-height:400px;
-    text-align: center;
-    
-    
-}
 
+.image img {
+    max-width: 280px;
+    max-height: 400px;
+    text-align: center;
+}
 
 /*sidebar*/
-.sidebar{
-    color:#FFFFFF
+.sidebar {
+    color: #FFFFFF
 }
 
-.list{
+.list {
     font-size: 18px;
-    padding:20px;
+    padding: 20px;
     list-style: none;
 }
 
-.list li{
+.list li {
     margin: 30px 3px;
     border-bottom: 1px solid #0a2b49;
     padding-bottom: 30px;
 }
 
 
-.side-label{
-    margin-left:20px;
+.side-label {
+    margin-left: 20px;
 }
 
-.side-label a{
+.side-label a {
     text-decoration: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-.side-icon{
-    padding:6px 8px;
+.side-icon {
+    padding: 6px 8px;
     border-radius: 18px;
     background-color: #FFFFFF;
     color: #0d3960;
 }
 
 
-.head-sidebar{
+.head-sidebar {
     text-align: center;
 }
 
 /*image*/
-.side-img{
+.side-img {
     width: 130px;
     height: 130px;
     border: 0.8px solid #0a2b49;
-    margin:30px auto;
-    font-size:48px;
+    margin: 30px auto;
+    font-size: 48px;
     padding: 35px;
     background-color: #E7EBEE;
     color: #0d3960;
     border-radius: 75px;
 }
-.sub-title{
+
+.sub-title {
     font-size: 14px;
+}
+
+.btn.btn-lg.btn-outline-secondary a{
+    color:rgba(0, 97, 37, 0.838);
+    text-decoration: none;
+    font-size: 26px;
 }
 
 /*Hovers*/
 
-.list li:hover{
-    transform:scale(1.2);
-    cursor:pointer;
+.list li:hover {
+    transform: scale(1.15);
+    cursor: pointer;
 }
 
-.logo img{
+.logo img {
     width: 40px;
     height: 40px;
 }
 
 /*Media Query*/
 
-@media(max-width:767.9px){
-    .body{
-        display:block;
+@media(max-width:767.9px) {
+    body {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .body {
+        display: block;
         overflow-x: auto;
     }
 
-    .sidebar{
-        width:100%;
-        height:auto;
+    .sidebar {
+        width: 100vw;
+        height: auto;
         padding-top: 10px;
-    
+
     }
 
-    .main{
+    .main {
         display: flex;
         flex-direction: column;
-        align-items:center;
-        width: 100%; 
-        }
+        align-items: center;
+        width: 100vw;
+    }
 
-    .cards{
+    .cards {
         display: flex;
         flex-direction: column;
-        align-content:space-around;
-        }
-    .box{
-        margin:15px 0;
-        min-width:240px;
-        width:80vw;
+        align-content: space-around;
+    }
+
+    .box {
+        margin: 15px 0;
+        min-width: 240px;
+        width: 80vw;
+    }
+
+    label[for="date"] {
+        display: block;
+        margin-top: 12px;
+    }
+
+    input,
+    select,
+    textarea,
+    #date {
+        margin-top: 13px;
+        width: 70vw;
+    }
+
+    .fieldcontain.required {
+        width: 70vw;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
     }
 }
+
 @media(min-width:768px) and (max-width:1024px) {
-    .body{
-        padding:0;
-        min-height:90vh;
+    .body {
+        padding: 0;
+        min-height: 90vh;
         overflow: hidden;
     }
-    .sidebar{
-        min-width:340px;
+
+    .sidebar {
+        min-width: 340px;
+
     }
-    .main{
-        width:100%;
+
+    .main {
+        width: 100%;
     }
-    .image img{max-height:300px;}
-    .cards{
+
+    .image img {
+        max-height: 300px;
+    }
+
+    .cards {
         display: grid;
-        grid-template-columns:repeat(2, 1fr);
-        grid-template-areas:"zero zero"
-                            "one two";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "zero zero"
+            "one two";
         row-gap: 15px;
         column-gap: 10px;
     }
-    #zero{
+
+    #zero {
         grid-area: zero;
-        grid-column:span 2;
-        width:98%;
+        grid-column: span 2;
+        width: 98%;
     }
-    #one{
+
+    #one {
         grid-area: one;
         width: 98%;
     }
-    #two{
+
+    #two {
         grid-area: two;
         width: 98%;
     }
-    
+
 }
 
-@media(min-width:1200px){
-    .body{min-height:90vh;}
-    .cards{
+@media(min-width:1200px) {
+    .body {
+        min-height: 90vh;
+    }
+
+    .cards {
         width: 100%;
         justify-content: center;
     }
-    .box{
-        position: relative;;
-        width:23vw;
+
+    .box {
+        position: relative;
+        ;
+        width: 23vw;
     }
-    .image{
-        width:98%;
-        margin-left:10px;
+
+    .image {
+        width: 98%;
+        margin-left: 10px;
     }
 }
-
