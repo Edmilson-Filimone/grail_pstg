@@ -47,7 +47,7 @@
                         </tbody>
                     </table>
                     <div>
-                        <button type="button" class="btn btn-lg btn-outline-secondary" onclick="window.print()">print</button>
+                        <button type="button" class="btn btn-lg btn-outline-secondary"><g:link controller="stream" action="outs_csv"><i class="fa-solid fa-circle-down"></i></g:link></button>
                     </div>
                     <g:if test="${outsCount > params.int('max')}">
                     <div class="pagination">
